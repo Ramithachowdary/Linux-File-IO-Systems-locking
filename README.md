@@ -19,10 +19,9 @@ Execute the C Program for the desired output.
 
 # PROGRAM:
 
+## 1.To Write a C program that illustrates files copying 
 
-
-## 1.To Write a C program that illustrates files copying
-```
+~~~
 #include <unistd.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -37,14 +36,11 @@ out = open("file.out", O_WRONLY|O_CREAT, S_IRUSR|S_IWUSR);
 while((nread = read(in,block,sizeof(block))) > 0)
 write(out,block,nread);
 exit(0);}
-```
+~~~
 
-## OUTPUT
-```
--rwxr-xr-x    1 root     root         18348 Apr 17 14:14 file.o
-```
 ## 2.To Write a C program that illustrates files locking
-```
+
+~~~
 #include <fcntl.h>
 #include <stdio.h>
 #include <string.h>
@@ -81,12 +77,15 @@ printf("unlocking");
 getchar();
 close (fd);
 return 0;
-}
-```
+~~~
+
 ## OUTPUT
 
-```
--rwxr-xr-x    1 root     root         18376 Apr 17 14:20 text.o
-```
+<img width="807" height="527" alt="Screenshot 2025-10-18 140020" src="https://github.com/user-attachments/assets/1d2754be-a9d4-45e0-a6b4-f24c2c534d16" />
+
+
+<img width="569" height="837" alt="Screenshot 2025-10-18 140104" src="https://github.com/user-attachments/assets/0b91f3a7-5f4e-4376-bf13-69e33949dfc4" />
+
+
 # RESULT:
 The programs are executed successfully.
